@@ -33,7 +33,7 @@ username, user id, access hash, name, group, phone number
 
 ```bash
 cd src
-python setup.py
+python parsing.py
 ```
 
 ### Inviter
