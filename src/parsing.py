@@ -99,7 +99,7 @@ with open("../members.csv", "w", encoding='UTF-8') as file:
         writer.writerow(row)
 
 
-if os.path.getsize('./members.csv') > 46:
+if os.path.getsize('../members.csv') > 46:
     cprint.info('// Members scraped successfully.')
 else:
     cprint.warn('// Probably you dont have enough rights to see members of the group')
