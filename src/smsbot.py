@@ -1,5 +1,5 @@
 from telethon import TelegramClient, events, errors
-from src.data import *
+from data import *
 from typing import Final
 from cprint import *
 import configparser
@@ -38,7 +38,7 @@ if len(response_files) == 0:
     sys.exit(1)
 for resp in response_files:
     if resp.startswith('response'):
-        file = open(f"responses/{resp}", "r").readlines()
+        file = open(f"../textfiles/responses/{resp}", "r").readlines() 
         text = "".join(file).split('///')
         try:
             trigger, response = text[0].strip(), text[1]
